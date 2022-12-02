@@ -1,0 +1,150 @@
+<html lang="en">
+    <head>
+        <title>Emily Zhang</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="Northwestern CS330 Project 6">
+        <meta name="keywords" content="Northwestern, CS330, Project, Emily, Zhang">
+        <meta name="author" content="Emily Zhang">
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script defer src="index.js"></script>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#background">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="background">
+                <img src="https://www.nist.gov/sites/default/files/styles/2800_x_2800_limit/public/images/2021/01/28/TIG_background_nobar.jpg?itok=xGu-vy6u"
+                    alt="Cyber Security Background Image">
+                <div class="centered">Emily Zhang</div>
+            </div>
+
+            <div id="about">
+                <h1>About</h1>
+                <div class="rows">
+                <div>
+                    <h3 id="intro">
+                    I am a junior pursuing computer science and data science at Northwestern University.
+                    Before I transfered to Northwestern in 2021, I was studying mathematics and economics
+                    at the University of California, San Diego. It was tough to transition from sunny California
+                    to the infamous windy city, but I have come to love Evanston after two years. My passions
+                    lie in cybersecurity, and I am slowly building the skills necessary to pursue it.
+                    <br><br>
+                    <a id="resume" href="EMILY_ZHANG_RESUME.pdf"
+                        target="_blank" rel="noopener noreferrer">Resume</a>
+                    </h3>
+                </div>
+
+                <div>
+                    <img src="headshot.png" alt="Emily Zhang's Headshot" style="width:100%">
+                </div>
+                
+                <div class="card">
+                    <h1>Emily Zhang</h1>
+                    <p class="title">Computer Science and Data Science Student</p>
+                    <p class="title">Northwestern University</p>
+                    <a href="https://github.com/emily-fangdi-zhang"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub Link"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/emily-fangdi-zhang/"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn Link"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/emilyfdzhang/"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram Link"><i class="fa fa-instagram"></i></a>
+                    <a href="mailto:emilyzhang2024.1@u.northwestern.edu"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Email Link"><i class="fa fa-envelope"></i></a>
+                    <p><a href="#contact"><button>Contact</button></a></p>
+                </div>
+                </div>
+            </div>
+
+            <div id="projects">
+                <h1>Projects</h1>
+                <hr class="dashed">
+                <h2>PacMan</h2>
+                <div class="row">
+                    <div class="column side">
+                        <h3>Image</h3>
+                        <img src="pacman.png" alt="PacMan Image">
+                    </div>
+    
+                    <div class="column middle">
+                        <h3>Description</h3>
+                        <p>
+                        PacMan is modeled after PacMan the arcade version with exact dimensions and functons. I utilized Northwestern's GE211 game engine
+                        to customize queries allowing ghosts to move with different characteristics and personalities. I designed one continuous level
+                        that support audio, 2D graphics and keyboard interaction. All code is written in C++ and follows the model-view-controller design pattern.
+                        PacMan features active and inactive ghosts, big and small points, and a PacMan with three lives.
+                        </p>
+                    </div>
+    
+                    <div class="column side">
+                        <h3>Learn More</h3>
+                        <a href="https://github.com/emily-fangdi-zhang/Pac-Man"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="PacMan Link"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+
+                <hr class="dashed">
+
+                <h2>Photo-App</h2>
+                <div class="row">
+                    <div class="column side">
+                        <h3>Image</h3>
+                        <img src="photoapp.png" alt="Photo-App Image">
+                    </div>
+    
+                    <div class="column middle">
+                        <h3>Description</h3>
+                        <p>
+                        Photo-App, modeled after Instagram, is a full-stack web application that allows users to view and interact with their friend's posts, and see suggested followers.
+                        I created the routes that allow a user to comment and like a post, as well as follow other users.
+                        I also implemented relational database to store user information with Python Flask and SQLalchemy.
+                        At the end, I deployed the app to the Heroku cloud platform in order to allow the user to connect to the server and make API calls.
+                        Follow the Photo-App link attached below and use the username "webdev" and password "password" to obtain access.
+                        </p>
+                    </div>
+    
+                    <div class="column side">
+                        <h3>Learn More</h3>
+                        <a href="https://github.com/emily-fangdi-zhang/photo-app"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Photo-App Link"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact">
+                <h1>Contact</h1>
+                    <div class="content-wrap">
+                      <form id="contact-form" action="https://formspree.io/f/mjvzazrn" method="POST">
+                        <input type="text" name="name" placeholder="Full name" aria-label="Full Name Form" required>
+                        <input type="email" name="mail" placeholder="Email" aria-label="Email Form" required>
+                        <input type="text" name="subject" placeholder="Subject" aria-label="Subject Form" required>
+                        <textarea name="message" rows="6" placeholder="Message" aria-label="Message Form" required></textarea>
+                        <button type="submit" name="submit">Send</button>
+                      </form>
+                      <div id="contact-form-status"></div>
+                    </div>
+            </div>
+
+            <footer>
+                <small>Copyright &copy; 2022. Designed by Emily Zhang. All Rights Reserved.</small>
+            </footer>
+        </main>
+    </body>
+</html>
